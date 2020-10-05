@@ -1,13 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Button, Progress} from 'semantic-ui-react'
+import {Image} from 'semantic-ui-react'
+
+import md from "./마당이.jpg"
+import Comments from './Comment.js'
+
+
 function App() {
   return (
     <div>
-    <p> 안녕하세요</p>
-    <Button primary>하이하이</Button>
-    <Progress percent = {66} indicating/>
+    <Image src={md} centered/>
+    <Comments />
     </div>
   );
 }
