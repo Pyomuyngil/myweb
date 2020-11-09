@@ -3,8 +3,7 @@ import { Grid, Button, Image, Divider, Header, Icon } from "semantic-ui-react";
 
 import md from "./마당이.jpg";
 import Comments from "./Comment.js";
-import MenuExampleBasic from "./Menu.js";
-import Board from "./board.js";
+import FixedMenuLayout from "./Menu.js";
 
 function App() {
   return (
@@ -40,7 +39,6 @@ function App() {
           />
         </Grid.Row>
       </Grid>
-
       <Divider horizontal>
         <Header as="h4">
           <Icon name="comment alternate" />
@@ -63,9 +61,8 @@ function App() {
           <Button circular color="google plus" icon="google plus" />
         </Grid>
       </div>
-      <MenuExampleBasic />
+      <FixedMenuLayout />
     </div>
-    <Board />
   );
 }
 
