@@ -44,6 +44,7 @@ const FixedMenuLayout = () => (
 
     <Container text style={{ marginTop: '7em' }}>
       <Header as='h1'>Semantic UI React Fixed Template</Header>
+      <h1> 안녕하세요 </h1>
       <Comments/>
 
       <Image src='/images/wireframe/media-paragraph.png' style={{ marginTop: '2em' }} />
