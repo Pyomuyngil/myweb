@@ -43,10 +43,34 @@ const FixedBoardLayout = () => (
     </Menu>
 
     <Container text style={{ marginTop: '7em' }}>
-      <Header as='h1'>Board Page</Header>
-      <h1> Page change </h1>
-      <Comments/>
-
+      <Header as='h1'>자유게시판</Header>
+      <table class="ui selectable inverted table">
+        <thead>
+          <tr>
+            <th>이름</th>
+            <th>내용</th>
+            <th class="right aligned">날짜</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>명일</td>
+            <td>아아아아아아아</td>
+            <td class="right aligned">2020/11/10</td>
+          </tr>
+          <tr>
+            <td>정욱</td>
+            <td>플옵 2차전 보러감</td>
+            <td class="right aligned">2020/11/10</td>
+          </tr>
+          <tr>
+            <td>현국</td>
+            <td>고추</td>
+            <td class="right aligned">2020/11/10</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="ui blue button">글쓰기</button>
       <Image src='/images/wireframe/media-paragraph.png' style={{ marginTop: '2em' }} />
       <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
     </Container>

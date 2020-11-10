@@ -16,7 +16,7 @@ const FixedMenuLayout = () => (
         <Menu.Item as='a' style={{ marginLeft: '5em' }}>홈</Menu.Item>
         <Menu.Item as='a'>국내동행찾기</Menu.Item>
         <Menu.Item as='a'>여행후기</Menu.Item>
-        <Menu.Item as='a'><a href= <Board />>자유게시판</a></Menu.Item>
+        <Menu.Item as='a' href = 'Board.js'>자유게시판</Menu.Item>
 
         <Dropdown item simple text='문의 및 신고'>
           <Dropdown.Menu>
