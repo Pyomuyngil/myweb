@@ -8,7 +8,6 @@ import FixedMenuLayout from "./Menu.js";
 function App() {
   return (
     <div>
-    
       <FixedMenuLayout />
     </div>
   );
