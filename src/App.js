@@ -4,6 +4,7 @@ import { Grid, Button, Image, Divider, Header, Icon } from "semantic-ui-react";
 import md from "./마당이.jpg";
 import Comments from "./Comment.js";
 import FixedMenuLayout from "./Menu.js";
+import FixedBoardLayout from "./Board.js";
 
 function App() {
   return (
