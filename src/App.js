@@ -5,11 +5,12 @@ import md from "./마당이.jpg";
 import Comments from "./Comment.js";
 import FixedMenuLayout from "./Menu.js";
 import FixedBoardLayout from "./Board.js";
-
+import FixedBoardWriteLayout from "./Write.js"
+import FixedFAQLayout from "./FAQ.js"
 function App() {
   return (
     <div>
-      <FixedMenuLayout />
+      <FixedFAQLayout />
     </div>
   );
 }

@@ -3,12 +3,8 @@ import {Container, Divider, Dropdown, Grid, Header, Image, Button,
   List,  Menu,  Segment} from 'semantic-ui-react'
 
 import Comments from "./Comment.js"
-import FixedBoardWriteLayout from "./Write.js"
-const FixedBoardLayout = () => (
-  <html>
-  <head>
-  </head>
-  <body>
+
+const FixedBoardWriteLayout = () => (
   <div>
     <Menu size='small' fixed='top' inverted>
       <Container>
@@ -47,38 +43,20 @@ const FixedBoardLayout = () => (
     </Menu>
 
     <Container text style={{ marginTop: '7em' }}>
-      <Header as='h1'>자유게시판</Header>
-      <table class="ui selectable inverted table">
-        <thead>
-          <tr>
-            <th>번호</th>
-            <th>제목</th>
-            <th>글쓴이</th>
-            <th class="right aligned">날짜</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>아아아아아아아</td>
-            <td>명일</td>
-            <td class="right aligned">2020/11/10</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>플옵 2차전 보러감</td>
-            <td>정욱</td>
-            <td class="right aligned">2020/11/10</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>고추</td>
-            <td>현국</td>
-            <td class="right aligned">2020/11/10</td>
-          </tr>
-        </tbody>
-      </table>
-      <button type = "button" class="ui blue button"  onclick="movepage()'">글쓰기</button>
+      <Header as='h1'>글쓰기</Header>
+      <div class="ui form">
+        <div class="field">
+          <label>제목</label>
+          <textarea rows="1"></textarea>
+        </div>
+        <div class="field">
+          <label>내용</label>
+          <textarea></textarea>
+        </div>
+      </div>
+      <button class="ui blue button">저장</button>  <button class="ui white button">취소</button>
+      <Image src='/images/wireframe/media-paragraph.png' style={{ marginTop: '2em' }} />
+      <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
     </Container>
 
     <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
@@ -132,8 +110,6 @@ const FixedBoardLayout = () => (
       </Container>
     </Segment>
   </div>
-  </body>
-  </html>
-);
+)
 
-export default FixedBoardLayout
+export default FixedBoardWriteLayout

@@ -3,8 +3,8 @@ import {Container, Divider, Dropdown, Grid, Header, Image, Button,
   List,  Menu,  Segment} from 'semantic-ui-react'
 
 import Comments from "./Comment.js"
-import Board from "./Board.js"
-
+import FixedBoardLayout from "./Board.js"
+import FixedFAQLayout from "./FAQ.js"
 const FixedMenuLayout = () => (
   <div>
     <Menu size='small' fixed='top' inverted>
@@ -16,7 +16,7 @@ const FixedMenuLayout = () => (
         <Menu.Item as='a' style={{ marginLeft: '5em' }}>홈</Menu.Item>
         <Menu.Item as='a'>국내동행찾기</Menu.Item>
         <Menu.Item as='a'>여행후기</Menu.Item>
-        <Menu.Item as='a' href = 'Board.js'>자유게시판</Menu.Item>
+        <Menu.Item as='a' href = "/Board">자유게시판</Menu.Item>
 
         <Dropdown item simple text='문의 및 신고'>
           <Dropdown.Menu>
@@ -104,5 +104,4 @@ const FixedMenuLayout = () => (
     </Segment>
   </div>
 )
-
 export default FixedMenuLayout
